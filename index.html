@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    </head>
+    <body>
+        <center>
+            <div class ="c_style">
+                <h1>Simple Interest Calculator</h1>
+                <!--Amount: <input type="number"  id="principal">  <br/>
+                 <Rate: <input type="range" min="0" max="20" class="slider" id="rate"> --> 
+                 <label for ="principalval"> Amount:</label>
+                 <input type = "number" oninput="principal(this.value);"
+                    id="principal">
+                </br>
+                <label for="selectYears">No .of years: </label>
+                 <select onchange="years(this.value);" id="years">
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                 <option value='3'>3</option>
+                 <option value='4'>4</option>
+                 <option value='5'>5</option>
+                 <option value='6'>6</option>
+                 <option value='7'>7</option>
+                 <option value='8'>8</option>
+                 <option value='9'>9</option>
+                 <option value='10'>10</option>
+                 <option value='11'>11</option>
+                 <option value='12'>12</option>
+                 <option value='13'>13</option>
+                 <option value='14'>14</option>
+                 <option value='15'>15</option>
+                 <option value='16'>16</option>
+                 <option value='17'>17</option>
+                 
+
+                </select>
+                 <br/>
+
+                <label for="selectRate">Rate: </label>
+                0.01<input type="range" value='1'
+                    min=0.001 max=22 step=0.01
+                oninput="rate(this.value);"
+                    id="rate">22
+                <br/>
+                <!--No .of Years: <input type="number"  id="years">  <br/>
+                 <form name="form1" id="form1" action="/action_page.php">
+                 No .of Years: <slect name="years" id ="years">
+                    <option value= "" selected="selected">
+                    </option>
+                </slect>
+                <br>>
+                <button  onclick="compute">Compute</button>
+                Interest : <span id="result"></span>
+                <output name="Interest " for="k"></output>
+
+                <button onclick="compute(this)">Compute</button>
+                Interest : <div id="result"></div-->
+                <button class = "compute" id = "result">compute</button>
+                <div id ="result">
+                    Interst:<p id ="result_value"></p>
+                </div>
+                <br />
+            </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
